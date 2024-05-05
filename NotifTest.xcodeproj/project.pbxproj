@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C8982852BE7CCE4002E6095 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 1C8982842BE7CCE4002E6095 /* ComposableArchitecture */; };
+		1C8982882BE7D345002E6095 /* NotifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8982872BE7D345002E6095 /* NotifManager.swift */; };
 		1CFCA3872BE7C6CF00D44573 /* NotifTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCA3862BE7C6CF00D44573 /* NotifTestApp.swift */; };
 		1CFCA3892BE7C6CF00D44573 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCA3882BE7C6CF00D44573 /* ContentView.swift */; };
 		1CFCA38B2BE7C6D200D44573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CFCA38A2BE7C6D200D44573 /* Assets.xcassets */; };
 		1CFCA38E2BE7C6D200D44573 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CFCA38D2BE7C6D200D44573 /* Preview Assets.xcassets */; };
+		1CFCA3982BE7C8D500D44573 /* NotifFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCA3972BE7C8D500D44573 /* NotifFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C8982872BE7D345002E6095 /* NotifManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifManager.swift; sourceTree = "<group>"; };
 		1CFCA3832BE7C6CF00D44573 /* NotifTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CFCA3862BE7C6CF00D44573 /* NotifTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifTestApp.swift; sourceTree = "<group>"; };
 		1CFCA3882BE7C6CF00D44573 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1CFCA38A2BE7C6D200D44573 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CFCA38D2BE7C6D200D44573 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CFCA3972BE7C8D500D44573 /* NotifFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8982852BE7CCE4002E6095 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +59,10 @@
 			children = (
 				1CFCA3862BE7C6CF00D44573 /* NotifTestApp.swift */,
 				1CFCA3882BE7C6CF00D44573 /* ContentView.swift */,
+				1CFCA3972BE7C8D500D44573 /* NotifFeature.swift */,
 				1CFCA38A2BE7C6D200D44573 /* Assets.xcassets */,
 				1CFCA38C2BE7C6D200D44573 /* Preview Content */,
+				1C8982872BE7D345002E6095 /* NotifManager.swift */,
 			);
 			path = NotifTest;
 			sourceTree = "<group>";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = NotifTest;
+			packageProductDependencies = (
+				1C8982842BE7CCE4002E6095 /* ComposableArchitecture */,
+			);
 			productName = NotifTest;
 			productReference = 1CFCA3832BE7C6CF00D44573 /* NotifTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 1CFCA37A2BE7C6CF00D44573;
+			packageReferences = (
+				1C8982832BE7CCE4002E6095 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 1CFCA3842BE7C6CF00D44573 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8982882BE7D345002E6095 /* NotifManager.swift in Sources */,
 				1CFCA3892BE7C6CF00D44573 /* ContentView.swift in Sources */,
 				1CFCA3872BE7C6CF00D44573 /* NotifTestApp.swift in Sources */,
+				1CFCA3982BE7C8D500D44573 /* NotifFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -280,6 +296,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +326,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C8982832BE7CCE4002E6095 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C8982842BE7CCE4002E6095 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C8982832BE7CCE4002E6095 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1CFCA37B2BE7C6CF00D44573 /* Project object */;
 }

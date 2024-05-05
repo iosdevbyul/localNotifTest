@@ -6,19 +6,24 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct ContentView: View {
+    
+    let store: StoreOf<NotifFeature>
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button {
+                store.send(.clickAlertButton)
+            } label: {
+                Text("Alert after 1 min")
+            }
         }
         .padding()
+        .onAppear(perform: {
+            store.send(.startSetting)
+        })
     }
 }
 
-#Preview {
-    ContentView()
-}
